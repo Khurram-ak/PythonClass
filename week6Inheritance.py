@@ -12,38 +12,25 @@ class Student(Person):
         super().__init__(_fName, _lName)
 
     def yourGrade(self):
-        return self.grade
-
-# class Student(Person):
-#     grade=""
-#     def yourGrade(self):
-#         return self.grade
+        return "Your Grade is " + self.grade
 
 class Teacher(Person):
     subject=""
+    def getSubject(self):
+        return self.subject
     pass
 
+std1=Student("khurram","amir",10)
 
-std1=Student("Khurram","amir")
-teacher1=Teacher("faraz","zaki")
-std1.grade=5
-gradeStd=std1.yourGrade()
-print(gradeStd)
+print(std1.fName)
+print(std1.lName)
+print(std1.grade)
 
-teacher1.subject="maths"
-# print(teacher1.subject)
 
+# teacher1=Teacher("faraz","zaki")
+# gradeStd=std1.yourGrade()
+# teacher1.subject="maths"
 # print(std1.yourGrade())
-# print(std1.grade)
-# print(std1.fName)
-# print(std1.lName)
 # print(teacher1.fullName())
 
 
-# class Student(Person):
-#     def __init__(self, _fName, _lName,_grade):
-#         self.grade=_grade
-#         super().__init__(_fName, _lName)
-
-#     def yourGrade(self):
-#         return self.grade
